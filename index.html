@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="submit.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Company Logo</h1>
+    </header>
+    <nav>
+        <a href="">Home</a>
+        <a href="">Registration</a>
+        <a href="">About Us</a>
+        <a href="">Contact Us</a>
+    </nav>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">Registration Form</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Result Table</button>
+      </div>
+
+      <div id="London" class="tabcontent">
+        <form id="reg-form">
+            <div class="container">
+              <h1>Register</h1>
+              <p>Please fill in this form to create an account.</p>
+              <hr>
+              <label for="full-name"><b>Full Name</b></label>
+              <input type="text" placeholder="Enter your Full Name" name="full-name" id="full-name" required>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" id="email" required>
+          
+              <label for="phone"><b>Phone Number</b></label>
+              <input type="text" placeholder="Enter your Phone Number" name="phone" id="phone" required>
+          
+              <label for="address"><b>Address</b></label>
+              <input type="text" placeholder="Enter your address" name="address" id="address" required>
+              <hr>
+          
+              
+              <button type="submit" class="registerbtn" id="submit">Register</button>
+            </div>
+            <div id="msg">
+                <pre></pre>
+            </div>
+          
+            
+          </form>
+      </div>
+      
+      <div id="Paris" class="tabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>
+      </div>
+
+    <footer>
+        <p>Contact Us</p>
+        0712345678
+        <p>Nairobi</p>
+        Copyright &copy; All Rights Reseved
+    </footer>
+</body>
+</html>
